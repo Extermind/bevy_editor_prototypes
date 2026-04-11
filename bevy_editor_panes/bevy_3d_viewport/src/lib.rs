@@ -17,11 +17,10 @@ use bevy_editor_cam::prelude::{DefaultEditorCamPlugins, EditorCam};
 use bevy_editor_styles::Theme;
 use bevy_infinite_grid::{InfiniteGrid, InfiniteGridPlugin, InfiniteGridSettings};
 use bevy_pane_layout::prelude::*;
-use bevy_transform_gizmos::{TransformGizmo, prelude::*};
+use bevy_transform_gizmos::{TransformGizmo, messages::ViewportResized, prelude::*};
 use view_gizmo::ViewGizmoPlugin;
 
 use crate::{selection_box::SelectionBoxPlugin, view_gizmo::view_gizmo_node};
-use bevy_events::ViewportResized;
 mod selection_box;
 mod view_gizmo;
 

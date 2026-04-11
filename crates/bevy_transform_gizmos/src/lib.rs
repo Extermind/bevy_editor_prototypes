@@ -15,12 +15,13 @@ use bevy::camera::Projection;
 use bevy::picking::{backend::ray::RayMap, pointer::PointerId};
 use bevy::{prelude::*, transform::TransformSystems};
 use bevy_editor_core::selection::EditorSelection;
-use bevy_events::ViewportResized;
 use mesh::{RotationGizmo, ViewTranslateGizmo};
 
+use messages::ViewportResized;
 use normalization::*;
 
 mod mesh;
+pub mod messages;
 pub mod normalization;
 
 /// Crate prelude.
